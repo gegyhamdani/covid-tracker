@@ -69,7 +69,7 @@ const Home = () => {
 
         <div className="grid">
           <div className="card">
-            <h3>Confrimed</h3>
+            <h3>Confirmed</h3>
             <p>{confirmed}</p>
           </div>
 
