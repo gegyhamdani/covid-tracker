@@ -46,7 +46,7 @@ export const Date = styled.p`
 `;
 
 export const Title = styled.h1`
-  text-align: center;
+  text-align: left;
   color: #0f0100;
 `;
 
