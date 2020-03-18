@@ -37,7 +37,7 @@ const Layout = ({ confirmed, recovered, death, updated }) => {
             </Data>
           </Information>
         </Square1>
-        <Square2> 2 </Square2>
+        <Square2></Square2>
       </Container>
     </Main>
   );

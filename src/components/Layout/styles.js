@@ -25,7 +25,7 @@ export const Square1 = styled.div`
   background-color: #f1f1f1;
   padding: 10px;
   width: 530px;
-  height: 300px;
+  height: 400px;
   margin: 10px;
   text-align: center;
 `;
@@ -33,7 +33,7 @@ export const Square1 = styled.div`
 export const Square2 = styled.div`
   background-color: #f1f1f1;
   width: 399px;
-  height: 300px;
+  height: 400px;
   margin: 10px;
   text-align: center;
 `;
