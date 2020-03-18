@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import Head from "next/head";
 import useSWR from "swr";
 
+import LoadingScreen from "../src/components/LoadingScreen";
+
 import api from "../src/services/api";
 
 const fetcher = url => api.get(url);
@@ -23,36 +25,7 @@ const Home = () => {
   }, [data]);
 
   if (error) return <div>failed to load</div>;
-  if (!data)
-    return (
-      <div className="container">
-        <main>
-          <h1 className="title">Loading</h1>
-        </main>
-        <style jsx>{`
-          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-            sans-serif;
-          .container {
-            height: 90vh;
-            padding: 0 0.5rem;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-          }
-
-          main {
-            padding: 5rem 0;
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-          }
-        `}</style>
-      </div>
-    );
+  if (!data) return <LoadingScreen />;
 
   return (
     <div className="container">
