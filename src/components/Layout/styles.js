@@ -23,8 +23,9 @@ export const Container = styled.div`
 
 export const Square1 = styled.div`
   background-color: #f1f1f1;
-  width: 700px;
-  height: 400px;
+  padding: 10px;
+  width: 530px;
+  height: 300px;
   margin: 10px;
   text-align: center;
 `;
@@ -32,7 +33,47 @@ export const Square1 = styled.div`
 export const Square2 = styled.div`
   background-color: #f1f1f1;
   width: 399px;
-  height: 400px;
+  height: 300px;
   margin: 10px;
   text-align: center;
+`;
+
+export const Date = styled.p`
+  font-size: 1em;
+  text-align: left;
+  margin-left: 1px;
+  color: #0f0100;
+`;
+
+export const Title = styled.h1`
+  text-align: center;
+  color: #0f0100;
+`;
+
+export const Information = styled.div`
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+`;
+
+export const Data = styled.div`
+  background-color: #f1f1f1;
+  margin: 20px;
+  text-align: center;
+
+  & > h1 {
+    font-size: 3em;
+    margin: 0;
+  }
+
+  & > p {
+    margin: 0;
+    line-height: 18px;
+  }
+`;
+
+export const Border = styled.div`
+  border-left: 2px solid #24334aff;
+  height: 100px;
 `;
