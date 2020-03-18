@@ -1,5 +1,13 @@
 import styled from "styled-components";
 
+export const Main = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background-color: #ffd300;
+`;
+
 export const Container = styled.div`
   min-height: 100vh;
   padding: 0 0.5rem;
