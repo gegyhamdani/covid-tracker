@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-one-expression-per-line */
 import React from "react";
 import PropTypes from "prop-types";
 
@@ -36,8 +37,13 @@ const Layout = ({ confirmed, recovered, death, updated }) => {
               <p>Meninggal Dunia</p>
             </Data>
           </Information>
+          <Date>
+            Sumber : <a href="https://covid19.mathdro.id">mathrdoid</a>
+          </Date>
         </Square1>
-        <Square2 />
+        <Square2>
+          <img src="v.png" alt="virus" />
+        </Square2>
       </Container>
     </Main>
   );

@@ -1,75 +1,128 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 export const Main = styled.div`
+  background-color: #ffd300;
+  left: 0;
   position: fixed;
   top: 0;
-  left: 0;
   width: 100vw;
-  background-color: #ffd300;
 `;
 
 export const Container = styled.div`
-  min-height: 100vh;
-  padding: 0 0.5rem;
   align-items: center;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  min-height: 100vh;
+  padding: 0 0.5rem;
 
   @media screen and (max-width: 710px) {
-    flex-direction: column;
+    justify-content: flex-start;
   }
 `;
 
 export const Square1 = styled.div`
-  background-color: #f1f1f1;
-  padding: 10px;
-  width: 530px;
-  height: 400px;
   margin: 10px;
+  padding: 10px;
   text-align: center;
+  width: 530px;
+
+  @media screen and (max-width: 530px) {
+    width: 330px;
+  }
+  @media screen and (max-width: 410px) {
+    width: 270px;
+    margin: 0;
+    padding: 0;
+  }
+`;
+
+const rotate = keyframes`
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 `;
 
 export const Square2 = styled.div`
-  background-color: #f1f1f1;
-  width: 399px;
-  height: 400px;
   margin: 10px;
   text-align: center;
+  transition: transform 1s;
+  width: 399px;
+
+  & > img {
+    animation: ${rotate} 30s linear infinite;
+    transition: transform 1s;
+    width: 300px;
+
+    @media screen and (max-width: 710px) {
+      width: 200px;
+    }
+    @media screen and (max-width: 600px) {
+      width: 120px;
+    }
+  }
+  &:hover {
+    transform: scale(1.2);
+  }
+
+  @media screen and (max-width: 710px) {
+    width: 300px;
+  }
+  @media screen and (max-width: 600px) {
+    margin-top: -100px;
+    margin-left: -70px;
+    width: 250px;
+  }
+  @media screen and (max-width: 410px) {
+    margin-top: -100px;
+    margin-left: -80px;
+    width: 250px;
+  }
 `;
 
 export const Date = styled.p`
-  font-size: 1em;
-  text-align: left;
-  margin-left: 1px;
   color: #0f0100;
+  font-size: 1em;
+  margin-bottom: 0;
+  margin-left: 1px;
+  text-align: left;
 `;
 
 export const Title = styled.h1`
-  text-align: left;
   color: #0f0100;
+  font-size: 2.5em;
+  margin: 0;
+  text-align: left;
+  @media screen and (max-width: 410px) {
+    font-size: 2em;
+  }
 `;
 
 export const Information = styled.div`
-  align-items: center;
   display: flex;
   flex-direction: row;
   justify-content: center;
 `;
 
 export const Data = styled.div`
-  background-color: #f1f1f1;
   margin: 20px;
-  text-align: center;
 
   & > h1 {
     font-size: 3em;
     margin: 0;
+
+    @media screen and (max-width: 410px) {
+      font-size: 2em;
+    }
   }
 
   & > p {
-    margin: 0;
     line-height: 18px;
+    margin: 0;
   }
 `;
 
