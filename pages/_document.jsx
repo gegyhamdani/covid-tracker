@@ -14,8 +14,6 @@ class MyDocument extends Document {
           <title>Covid19 - Tracker</title>
 
           <meta name="description" content="Corona Virus, Tracker" />
-          <meta name="robots" content="noindex" />
-          <meta name="AdsBot-Google" content="noindex" />
 
           <link rel="shortcut icon" href="favicon.ico" />
           <link rel="apple-touch-icon" href="favicon.ico" />
