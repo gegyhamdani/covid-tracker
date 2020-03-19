@@ -9,7 +9,7 @@ const index = () => {
         {Array(12)
           .fill()
           .map((data, i) => {
-            return <div key={i} />;
+            return <div key={i.toString()} />;
           })}
       </Container>
     </Wrapper>

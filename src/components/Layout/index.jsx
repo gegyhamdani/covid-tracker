@@ -1,5 +1,5 @@
 import React from "react";
-import PropTypes from "prop-types"; // ES6
+import PropTypes from "prop-types";
 
 import {
   Main,
@@ -37,7 +37,7 @@ const Layout = ({ confirmed, recovered, death, updated }) => {
             </Data>
           </Information>
         </Square1>
-        <Square2></Square2>
+        <Square2 />
       </Container>
     </Main>
   );
