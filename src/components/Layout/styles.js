@@ -114,19 +114,34 @@ export const Data = styled.div`
   & > h1 {
     font-size: 3em;
     margin: 0;
+    transition: font-size 1s;
 
     @media screen and (max-width: 410px) {
       font-size: 2em;
     }
   }
 
+  h1:hover {
+    font-size: 3.4em;
+  }
+
   & > p {
     line-height: 18px;
     margin: 0;
+
+    @media screen and (max-width: 410px) {
+      line-height: 14px;
+      font-size: 0.9em;
+    }
   }
 `;
 
 export const Border = styled.div`
   border-left: 2px solid #24334aff;
   height: 100px;
+  margin-top: 20px;
+
+  @media screen and (max-width: 410px) {
+    height: 80px;
+  }
 `;

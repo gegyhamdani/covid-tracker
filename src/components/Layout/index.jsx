@@ -28,7 +28,7 @@ const Layout = ({ confirmed, recovered, death, updated }) => {
             </Data>
             <Border />
             <Data>
-              <h1>{recovered}</h1>
+              <h1 style={{ color: "#00a08f" }}>{recovered}</h1>
               <p>Sembuh</p>
             </Data>
             <Border />
@@ -38,7 +38,14 @@ const Layout = ({ confirmed, recovered, death, updated }) => {
             </Data>
           </Information>
           <Date>
-            Sumber : <a href="https://covid19.mathdro.id">mathrdoid</a>
+            Sumber:&nbsp;
+            <a
+              href="https://github.com/mathdroid/covid-19-api"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              mathrdoid
+            </a>
           </Date>
         </Square1>
         <Square2>
