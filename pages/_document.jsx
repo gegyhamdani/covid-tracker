@@ -13,7 +13,7 @@ class MyDocument extends Document {
         <Head>
           <title>Covid19 - Tracker</title>
 
-          <meta name="Covid19" content="Corona Virus, Tracker" />
+          <meta name="description" content="Corona Virus, Tracker" />
           <meta name="robots" content="noindex" />
           <meta name="AdsBot-Google" content="noindex" />
 
