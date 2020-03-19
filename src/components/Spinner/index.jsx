@@ -8,9 +8,9 @@ const index = () => {
       <Container>
         {Array(12)
           .fill()
-          .map(() => (
-            <div />
-          ))}
+          .map((data, i) => {
+            return <div key={i.toString()} />;
+          })}
       </Container>
     </Wrapper>
   );
