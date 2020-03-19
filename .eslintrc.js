@@ -1,12 +1,13 @@
 module.exports = {
     "env": {
         "browser": true,
-        "es6": true,
-        "node": true
+        "es6": true
     },
     "extends": [
         "eslint:recommended",
-        "plugin:react/recommended"
+        "plugin:react/recommended",
+        "airbnb", 
+        "prettier",
     ],
     "globals": {
         "Atomics": "readonly",
@@ -20,8 +21,11 @@ module.exports = {
         "sourceType": "module"
     },
     "plugins": [
-        "react"
+        "react",
+        "prettier",
+        "react-hooks"
     ],
     "rules": {
+        "prettier/prettier": ["error"],
     }
 };
