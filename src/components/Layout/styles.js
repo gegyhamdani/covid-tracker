@@ -115,7 +115,7 @@ export const Data = styled.div`
   & > h1 {
     font-size: 3em;
     margin: 0;
-    transition: font-size 1s;
+    transition: font-size 0.6s;
 
     @media screen and (max-width: 410px) {
       font-size: 2em;
