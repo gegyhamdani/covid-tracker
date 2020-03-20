@@ -95,9 +95,10 @@ export const Date = styled.p`
 export const Title = styled.h1`
   color: #0f0100;
   font-size: 2.5em;
-  margin: 0;
-  text-align: left;
   line-height: 98%;
+  margin: 0;
+  padding-top: 15px;
+  text-align: left;
   @media screen and (max-width: 410px) {
     font-size: 2em;
   }
@@ -115,7 +116,7 @@ export const Data = styled.div`
   & > h1 {
     font-size: 3em;
     margin: 0;
-    transition: font-size 0.6s;
+    transition: font-size 0.3s;
 
     @media screen and (max-width: 410px) {
       font-size: 2em;
