@@ -24,7 +24,7 @@ const Layout = ({ confirmed, recovered, death, updated }) => {
           <Information>
             <Data>
               <h1>{confirmed}</h1>
-              <p>Positif Corona</p>
+              <p>Total Kasus</p>
             </Data>
             <Border />
             <Data>
