@@ -97,6 +97,7 @@ export const Title = styled.h1`
   font-size: 2.5em;
   margin: 0;
   text-align: left;
+  line-height: 98%;
   @media screen and (max-width: 410px) {
     font-size: 2em;
   }
