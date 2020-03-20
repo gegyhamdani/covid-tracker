@@ -19,7 +19,7 @@ const Layout = ({ confirmed, recovered, death, updated }) => {
     <Main>
       <Container>
         <Square1>
-          <Date style={{ fontSize: "1.2em" }}>{updated}</Date>
+          <Date style={{ fontSize: "1.1em" }}>Update Terakhir: {updated}</Date>
           <Title>Data Terbaru Corona di Indonesia</Title>
           <Information>
             <Data>

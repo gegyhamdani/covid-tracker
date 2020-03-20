@@ -1,8 +1,20 @@
 import styled, { keyframes } from "styled-components";
 
+const opacityFrame = keyframes`
+  from {
+    opacity: 0
+  }
+
+  to {
+    opacity: 1
+  }
+`;
+
 export const Main = styled.div`
+  animation: ${opacityFrame} 2s linear forwards;
   background-color: #ffd300;
   left: 0;
+  opacity: 0;
   position: fixed;
   top: 0;
   width: 100vw;
