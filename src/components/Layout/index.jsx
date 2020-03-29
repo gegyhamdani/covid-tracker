@@ -1,6 +1,7 @@
 /* eslint-disable react/jsx-one-expression-per-line */
-import React from "react";
-import PropTypes from "prop-types";
+import React, { useContext } from "react";
+
+import AppContext from "../../util/appContext";
 
 import {
   Main,
@@ -14,7 +15,9 @@ import {
   Border
 } from "./styles";
 
-const Layout = ({ confirmed, recovered, death, updated }) => {
+const Layout = () => {
+  const { confirmed, recovered, death, updated } = useContext(AppContext);
+
   return (
     <Main>
       <Container>
@@ -54,20 +57,6 @@ const Layout = ({ confirmed, recovered, death, updated }) => {
       </Container>
     </Main>
   );
-};
-
-Layout.propTypes = {
-  confirmed: PropTypes.number,
-  recovered: PropTypes.number,
-  death: PropTypes.number,
-  updated: PropTypes.string
-};
-
-Layout.defaultProps = {
-  confirmed: 0,
-  recovered: 0,
-  death: 0,
-  updated: ""
 };
 
 export default Layout;
