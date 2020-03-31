@@ -11,6 +11,10 @@ jobs:
           steps:
             - run: npm install
             - run: npm test
+            - run: npm audit
+            - run: npm audit
+            - run: npm run lint
+            - run: npm run build
 workflows:
     build-and-test:
       jobs:
