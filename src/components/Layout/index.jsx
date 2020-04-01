@@ -40,16 +40,6 @@ const Layout = () => {
               <p>Meninggal Dunia</p>
             </Data>
           </Information>
-          <Date>
-            Sumber:&nbsp;
-            <a
-              href="https://github.com/mathdroid/covid-19-api"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              mathrdoid
-            </a>
-          </Date>
         </Square1>
         <Square2>
           <img src="v.png" alt="virus" />
