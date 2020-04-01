@@ -11,21 +11,26 @@ import Context from "../src/util/appContext";
 const fetcher = url => api.get(url);
 
 const Home = () => {
-  const { data, error } = useSWR("case/summary", fetcher);
+  const { data: globalData } = useSWR("/countries/Indonesia", fetcher);
+  const { data: localData, error } = useSWR(
+    "/countries/Indonesia/confirmed",
+    fetcher
+  );
 
   if (error) return <div>failed to load</div>;
-  if (!data) return <LoadingScreen />;
+  if (!localData) return <LoadingScreen />;
+  if (!globalData) return <LoadingScreen />;
 
+  const { data: globalInfo } = globalData;
+  const { data: localInfo } = localData;
   return (
     <>
       <Context.Provider
         value={{
-          confirmed: data.confirmed,
-          recovered: data.recovered,
-          death: data.deceased,
-          updated: new Date(
-            data.metadata.lastUpdateAt.lastUpdate
-          ).toLocaleString()
+          confirmed: localInfo[0].confirmed,
+          recovered: localInfo[0].recovered,
+          death: localInfo[0].deaths,
+          updated: new Date(globalInfo.lastUpdate).toLocaleString()
         }}
       >
         <Layout />
