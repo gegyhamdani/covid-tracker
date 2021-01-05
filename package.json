@@ -8,7 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "next": "^9.3.3",
     "next-offline": "^5.0.0",
     "prop-types": "^15.7.2",
