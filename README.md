@@ -7,14 +7,14 @@ Cases overview for (temporary) Indonesia
 ### Build with
 
 <a href="https://nextjs.org/" rel="NextJS">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Nextjs-logo.svg/1920px-Nextjs-logo.svg.png" alt="NextJS" width="200"/>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Nextjs-logo.svg/1920px-Nextjs-logo.svg.png" alt="NextJS" width="400"/>
 </a>
 
 
 ### Data provided by
 
 <a href="https://github.com/mathdroid/covid-19-api" rel="mathdroid">
-  <img src="https://camo.githubusercontent.com/5f14b98ceb277d4a52caac7238259129f0c89e628107da97b0bd5b2046dae477/68747470733a2f2f636f76696431392e6d61746864726f2e69642f6170692f6f67" alt="Mathdroid" width="100"/>
+  <img src="https://camo.githubusercontent.com/5f14b98ceb277d4a52caac7238259129f0c89e628107da97b0bd5b2046dae477/68747470733a2f2f636f76696431392e6d61746864726f2e69642f6170692f6f67" alt="Mathdroid" width="400"/>
 </a>
 
 ### Installations
