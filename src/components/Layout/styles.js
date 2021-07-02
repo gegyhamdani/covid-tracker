@@ -28,7 +28,7 @@ export const Container = styled.div`
   min-height: 100vh;
   padding: 0 0.5rem;
 
-  @media screen and (max-width: 710px) {
+  @media screen and (max-width: 1024px) {
     justify-content: flex-start;
   }
 `;
@@ -37,15 +37,10 @@ export const Square1 = styled.div`
   margin: 10px;
   padding: 10px;
   text-align: center;
-  width: 530px;
+  width: 640px;
 
-  @media screen and (max-width: 530px) {
-    width: 330px;
-  }
-  @media screen and (max-width: 410px) {
-    width: 270px;
-    margin: 0;
-    padding: 0;
+  @media screen and (max-width: 1024px) {
+    width: 70%;
   }
 `;
 
@@ -63,36 +58,22 @@ export const Square2 = styled.div`
   margin: 10px;
   text-align: center;
   transition: transform 1s;
-  width: 399px;
+  width: 400px;
 
   & > img {
     animation: ${rotate} 30s linear infinite;
     transition: transform 1s;
-    width: 300px;
+    width: 280px;
 
-    @media screen and (max-width: 710px) {
-      width: 200px;
-    }
-    @media screen and (max-width: 600px) {
-      width: 120px;
+    @media screen and (max-width: 900px) {
+      width: 0;
     }
   }
   &:hover {
     transform: scale(1.2);
   }
-
-  @media screen and (max-width: 710px) {
-    width: 300px;
-  }
-  @media screen and (max-width: 600px) {
-    margin-top: -100px;
-    margin-left: -70px;
-    width: 250px;
-  }
-  @media screen and (max-width: 410px) {
-    margin-top: -100px;
-    margin-left: -80px;
-    width: 250px;
+  @media screen and (max-width: 1024px) {
+    width: 0;
   }
 `;
 
@@ -102,6 +83,25 @@ export const Date = styled.p`
   margin-bottom: 0;
   margin-left: 1px;
   text-align: left;
+  @media screen and (max-width: 410px) {
+    line-height: 14px;
+    font-size: 0.9em;
+  }
+`;
+
+export const Footer = styled.p`
+  color: #0f0100;
+  font-size: 1em;
+  margin-bottom: 0;
+  margin-left: 1px;
+  text-align: left;
+  @media screen and (max-width: 1024px) {
+    margin-top: 36px;
+  }
+  @media screen and (max-width: 410px) {
+    line-height: 14px;
+    font-size: 0.9em;
+  }
 `;
 
 export const Title = styled.h1`
@@ -111,6 +111,9 @@ export const Title = styled.h1`
   margin: 0;
   padding-top: 15px;
   text-align: left;
+  @media screen and (max-width: 1024px) {
+    font-size: 2.3em;
+  }
   @media screen and (max-width: 410px) {
     font-size: 2em;
   }
@@ -120,10 +123,19 @@ export const Information = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
+  @media screen and (max-width: 1024px) {
+    margin-top: 18px;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
 `;
 
 export const Data = styled.div`
   margin: 20px;
+
+  @media screen and (max-width: 1024px) {
+    margin: 5px 0;
+  }
 
   & > h1 {
     font-size: 3em;
@@ -132,6 +144,10 @@ export const Data = styled.div`
 
     @media screen and (max-width: 410px) {
       font-size: 2em;
+    }
+
+    @media screen and (max-width: 1024px) {
+      text-align: left;
     }
   }
 
@@ -147,6 +163,10 @@ export const Data = styled.div`
       line-height: 14px;
       font-size: 0.9em;
     }
+
+    @media screen and (max-width: 1024px) {
+      text-align: left;
+    }
   }
 `;
 
@@ -155,7 +175,8 @@ export const Border = styled.div`
   height: 100px;
   margin-top: 20px;
 
-  @media screen and (max-width: 410px) {
-    height: 80px;
+  @media screen and (max-width: 1024px) {
+    height: 0;
+    margin-top: 0;
   }
 `;

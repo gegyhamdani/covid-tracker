@@ -9,6 +9,7 @@ import {
   Square1,
   Square2,
   Date,
+  Footer,
   Title,
   Information,
   Data,
@@ -22,9 +23,7 @@ const Layout = () => {
     <Main>
       <Container>
         <Square1>
-          <Date style={{ fontSize: "1.1em" }}>
-            Update Terakhir: {updated.toLocaleString("id")}
-          </Date>
+          <Date>Update Terakhir: {updated.toLocaleString("id")}</Date>
           <Title>Data Terbaru Corona di Indonesia</Title>
           <Information>
             <Data>
@@ -44,7 +43,7 @@ const Layout = () => {
               <p>Meninggal Dunia</p>
             </Data>
           </Information>
-          <Date>
+          <Footer>
             Sumber:&nbsp;
             <a
               href="https://github.com/mathdroid/covid-19-api"
@@ -53,7 +52,7 @@ const Layout = () => {
             >
               mathrdoid
             </a>
-          </Date>
+          </Footer>
         </Square1>
         <Square2>
           <img src="v.png" alt="virus" />
