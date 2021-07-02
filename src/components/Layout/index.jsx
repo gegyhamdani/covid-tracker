@@ -22,16 +22,20 @@ const Layout = () => {
     <Main>
       <Container>
         <Square1>
-          <Date style={{ fontSize: "1.1em" }}>Update Terakhir: {updated}</Date>
+          <Date style={{ fontSize: "1.1em" }}>
+            Update Terakhir: {updated.toLocaleString("id")}
+          </Date>
           <Title>Data Terbaru Corona di Indonesia</Title>
           <Information>
             <Data>
-              <h1>{confirmed}</h1>
+              <h1>{confirmed.toLocaleString("id")}</h1>
               <p>Total Kasus</p>
             </Data>
             <Border />
             <Data>
-              <h1 style={{ color: "#00a08f" }}>{recovered}</h1>
+              <h1 style={{ color: "#00a08f" }}>
+                {recovered.toLocaleString("id")}
+              </h1>
               <p>Sembuh</p>
             </Data>
             <Border />
