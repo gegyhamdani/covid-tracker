@@ -39,7 +39,7 @@ const Layout = () => {
             </Data>
             <Border />
             <Data>
-              <h1>{death}</h1>
+              <h1>{death.toLocaleString("id")}</h1>
               <p>Meninggal Dunia</p>
             </Data>
           </Information>
