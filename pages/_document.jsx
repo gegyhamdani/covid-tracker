@@ -11,8 +11,6 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <title>Covid19 - Tracker</title>
-
           <meta name="description" content="Corona Virus, Tracker" />
 
           <link rel="shortcut icon" href="favicon.ico" />
