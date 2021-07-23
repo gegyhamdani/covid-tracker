@@ -20,14 +20,23 @@ export const Main = styled.div`
   width: 100vw;
 `;
 
+export const Header = styled.div`
+  display: flex;
+  justify-content: flex-end;
+`;
+
+export const HeaderRow = styled.div`
+  margin: 15px;
+`;
+
 export const Container = styled.div`
   align-items: center;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin-top: -60px;
   min-height: 100vh;
   padding: 0 0.5rem;
-
   @media screen and (max-width: 1024px) {
     justify-content: flex-start;
   }
