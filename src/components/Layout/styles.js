@@ -79,7 +79,7 @@ export const Square2 = styled.div`
     }
   }
   &:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
   }
   @media screen and (max-width: 1024px) {
     width: 0;
