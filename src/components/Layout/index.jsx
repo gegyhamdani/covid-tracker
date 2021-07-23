@@ -54,7 +54,7 @@ const Layout = () => {
             </Data>
             <Border />
             <Data>
-              <h1 style={{ color: "#00a08f" }}>
+              <h1 style={{ color: "#004D14" }}>
                 {recovered.toLocaleString("id")}
               </h1>
               <p>Sembuh</p>
