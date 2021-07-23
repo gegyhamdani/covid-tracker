@@ -30,7 +30,7 @@ const Layout = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src="github.png" alt="github" width="30px" />
+            <img src="github.png" alt="github" width="30px" height="30px" />
           </a>
         </HeaderRow>
         <HeaderRow>
@@ -39,7 +39,7 @@ const Layout = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src="linkedin.png" alt="linkedin" width="30px" />
+            <img src="linkedin.png" alt="linkedin" width="30px" height="30px" />
           </a>
         </HeaderRow>
       </Header>
@@ -77,7 +77,7 @@ const Layout = () => {
           </Footer>
         </Square1>
         <Square2>
-          <img src="v.png" alt="virus" />
+          <img src="v.png" alt="virus" width="280px" height="339px" />
         </Square2>
       </Container>
     </Main>
