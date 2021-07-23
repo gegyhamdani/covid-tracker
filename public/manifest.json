@@ -46,7 +46,7 @@
   "short_name": "Covid19 Tracker",
   "theme_color": "#ffd300",
   "background_color": "#000000",
-  "display": "browser",
+  "display": "standalone",
   "scope": "/",
   "start_url": "./index.html"
 }
