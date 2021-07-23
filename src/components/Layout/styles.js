@@ -72,7 +72,7 @@ export const Square2 = styled.div`
   & > img {
     animation: ${rotate} 30s linear infinite;
     transition: transform 1s;
-    width: 280px;
+    width: 240px;
 
     @media screen and (max-width: 900px) {
       width: 0;
