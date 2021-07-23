@@ -77,7 +77,7 @@ const Layout = () => {
           </Footer>
         </Square1>
         <Square2>
-          <img src="v.png" alt="virus" width="280px" height="339px" />
+          <img src="v.png" alt="virus" width="250px" height="300px" />
         </Square2>
       </Container>
     </Main>
